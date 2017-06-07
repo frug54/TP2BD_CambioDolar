@@ -1,7 +1,8 @@
 package com.tec.controller.login;
 
 import com.tec.cambiodedolar.MainFrame;
-import com.tec.model.UserModel;
+import com.tec.controller.admin.ContainerAdminController;
+import com.tec.model.User;
 import com.tec.view.LogIn.LogInView;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -26,7 +27,15 @@ public class LogInController implements ActionListener {
         logInView.ingresarButton.addActionListener(this);
         logInView.generalButton.addActionListener(this);
     }
-    
+
+    public MainFrame getMainFrame() {
+        return mainFrame;
+    }
+
+    public void setMainFrame(MainFrame mainFrame) {
+        this.mainFrame = mainFrame;
+    }
+        
     public void initInterface() {
         mainFrame.setLayout(new BorderLayout());
         mainFrame.getContentPane().add(logInView);
@@ -42,11 +51,13 @@ public class LogInController implements ActionListener {
             String usernick = logInView.userTextField.getText();
 
             // Llamar metodo de base de datos
-            UserModel user = null;
+            User user = new User(1, "Admin", "PW7427", "Activo");
 
-            if(user != null) {
+            if(user != null && user.getEstado() == "Activo") {
                 if (user.getTipoUsuario() == "Admin") {
                     System.out.println("Admin");
+                    ContainerAdminController containerAdminController = new ContainerAdminController(user);
+                    containerAdminController.displayContainerAdmin();
                 } else if (user.getTipoUsuario() == "Agente") {
                     System.out.println("Agente");
                 } else {
