@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/controller/admin/ChangePWController.java</file>
-            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/controller/login/LogInController.java</file>
-            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/model/User.java</file>
-            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/view/admin/ChangePWPanel.java</file>
+            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/view/agente/ItemParticipantePanel.java</file>
+            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/view/admin/ItemUsersPanel.java</file>
+            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/controller/admin/itemUserController.java</file>
+            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/controller/agente/ItemParticipanteController.java</file>
             <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/controller/admin/ContainerAdminController.java</file>
-            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/cambiodedolar/CambioDeDolar.java</file>
+            <file>file:/M:/Proyectos/Bases%20de%20Datos/Cambio%20de%20Dolar/TP2BD_CambioDolar/src/com/tec/model/Participante.java</file>
         </group>
     </open-files>
 </project-private>

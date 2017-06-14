@@ -51,7 +51,7 @@ public class LogInController implements ActionListener {
             String usernick = logInView.userTextField.getText();
 
             // Llamar metodo de base de datos
-            User user = new User(1, "Admin", "PW7427", "Activo");
+            User user = new User(1, "Admin", "PW7427", "Activo", "Klaus");
 
             if(user != null && user.getEstado() == "Activo") {
                 if (user.getTipoUsuario() == "Admin") {

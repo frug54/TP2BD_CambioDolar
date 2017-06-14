@@ -46,6 +46,7 @@ public class ContainerAdminPanel extends javax.swing.JPanel {
 
         restaurantPanel = new javax.swing.JPanel();
         optionsLabel = new javax.swing.JLabel();
+        usersListButton = new javax.swing.JButton();
         changePWButton = new javax.swing.JButton();
         containerPanel = new javax.swing.JPanel();
 
@@ -60,6 +61,11 @@ public class ContainerAdminPanel extends javax.swing.JPanel {
         optionsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         optionsLabel.setText("Opciones");
 
+        usersListButton.setBackground(new java.awt.Color(153, 107, 66));
+        usersListButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        usersListButton.setForeground(new java.awt.Color(255, 255, 255));
+        usersListButton.setText("Lista Usuarios");
+
         changePWButton.setBackground(new java.awt.Color(153, 107, 66));
         changePWButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         changePWButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,20 +77,31 @@ public class ContainerAdminPanel extends javax.swing.JPanel {
             restaurantPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(restaurantPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(optionsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, restaurantPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(changePWButton))
+                .addGroup(restaurantPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(restaurantPanelLayout.createSequentialGroup()
+                        .addComponent(optionsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 14, Short.MAX_VALUE))
+                    .addComponent(usersListButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(restaurantPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(restaurantPanelLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(changePWButton)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         restaurantPanelLayout.setVerticalGroup(
             restaurantPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(restaurantPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(optionsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(111, 111, 111)
-                .addComponent(changePWButton)
-                .addContainerGap(317, Short.MAX_VALUE))
+                .addGap(167, 167, 167)
+                .addComponent(usersListButton)
+                .addContainerGap(261, Short.MAX_VALUE))
+            .addGroup(restaurantPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(restaurantPanelLayout.createSequentialGroup()
+                    .addGap(162, 162, 162)
+                    .addComponent(changePWButton)
+                    .addContainerGap(307, Short.MAX_VALUE)))
         );
 
         containerPanel.setBackground(new java.awt.Color(204, 204, 204));
@@ -95,7 +112,7 @@ public class ContainerAdminPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(restaurantPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(restaurantPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(containerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 673, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -116,5 +133,6 @@ public class ContainerAdminPanel extends javax.swing.JPanel {
     public javax.swing.JPanel containerPanel;
     private javax.swing.JLabel optionsLabel;
     public javax.swing.JPanel restaurantPanel;
+    public javax.swing.JButton usersListButton;
     // End of variables declaration//GEN-END:variables
 }
